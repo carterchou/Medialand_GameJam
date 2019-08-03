@@ -13,12 +13,16 @@ public class player : MonoBehaviour
     public GameObject[] weapon;
     public vThirdPersonController v_con ;
 
+    public AudioClip player_jump;
+    AudioSource audiosource;
+
+
     private bool weapon_on = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        audiosource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -33,7 +37,11 @@ public class player : MonoBehaviour
         {
             anim.SetTrigger("attack");
         }
-
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            // play jump audio
+            audiosource.PlayOneShot(player_jump);
+        }
     }
     void OnCollisionEnter(UnityEngine.Collision hit)
     {
