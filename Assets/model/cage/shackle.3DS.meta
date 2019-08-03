@@ -1,0 +1,250 @@
+fileFormatVersion: 2
+guid: 33731ecb158182b4a9e052fb5b17c7f3
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: shackle-01
+    100004: shackle-02
+    100006: shackle-03
+    100008: shackle-04
+    100010: shackle-05
+    100012: shackle-06
+    100014: shackle-07
+    100016: shackle-08
+    100018: shackle-10
+    100020: shackle-11
+    100022: shackle-12
+    100024: shackle-13
+    100026: shackle-14
+    100028: shackle-15
+    100030: shackle-16
+    100032: shackle-17
+    100034: shackle-18
+    100036: shackle-19
+    100038: shackle-c0
+    100040: shackle-c1
+    100042: shackle-c2
+    100044: shackle-c3
+    100046: shackle-c4
+    100048: shackle-c5
+    100050: shackle-c6
+    100052: shackle-c7
+    100054: shackle-c8
+    100056: shackle-c9
+    100058: shackle-ch
+    400000: //RootNode
+    400002: shackle-01
+    400004: shackle-02
+    400006: shackle-03
+    400008: shackle-04
+    400010: shackle-05
+    400012: shackle-06
+    400014: shackle-07
+    400016: shackle-08
+    400018: shackle-10
+    400020: shackle-11
+    400022: shackle-12
+    400024: shackle-13
+    400026: shackle-14
+    400028: shackle-15
+    400030: shackle-16
+    400032: shackle-17
+    400034: shackle-18
+    400036: shackle-19
+    400038: shackle-c0
+    400040: shackle-c1
+    400042: shackle-c2
+    400044: shackle-c3
+    400046: shackle-c4
+    400048: shackle-c5
+    400050: shackle-c6
+    400052: shackle-c7
+    400054: shackle-c8
+    400056: shackle-c9
+    400058: shackle-ch
+    2100000: metal
+    2100002: 'Material #0'
+    2300000: shackle-01
+    2300002: shackle-02
+    2300004: shackle-03
+    2300006: shackle-04
+    2300008: shackle-05
+    2300010: shackle-06
+    2300012: shackle-07
+    2300014: shackle-08
+    2300016: shackle-10
+    2300018: shackle-11
+    2300020: shackle-12
+    2300022: shackle-13
+    2300024: shackle-14
+    2300026: shackle-15
+    2300028: shackle-16
+    2300030: shackle-17
+    2300032: shackle-18
+    2300034: shackle-19
+    2300036: shackle-c0
+    2300038: shackle-c1
+    2300040: shackle-c2
+    2300042: shackle-c3
+    2300044: shackle-c4
+    2300046: shackle-c5
+    2300048: shackle-c6
+    2300050: shackle-c7
+    2300052: shackle-c8
+    2300054: shackle-c9
+    2300056: shackle-ch
+    3300000: shackle-01
+    3300002: shackle-02
+    3300004: shackle-03
+    3300006: shackle-04
+    3300008: shackle-05
+    3300010: shackle-06
+    3300012: shackle-07
+    3300014: shackle-08
+    3300016: shackle-10
+    3300018: shackle-11
+    3300020: shackle-12
+    3300022: shackle-13
+    3300024: shackle-14
+    3300026: shackle-15
+    3300028: shackle-16
+    3300030: shackle-17
+    3300032: shackle-18
+    3300034: shackle-19
+    3300036: shackle-c0
+    3300038: shackle-c1
+    3300040: shackle-c2
+    3300042: shackle-c3
+    3300044: shackle-c4
+    3300046: shackle-c5
+    3300048: shackle-c6
+    3300050: shackle-c7
+    3300052: shackle-c8
+    3300054: shackle-c9
+    3300056: shackle-ch
+    4300000: shackle-ch
+    4300002: shackle-c0
+    4300004: shackle-c1
+    4300006: shackle-c2
+    4300008: shackle-c3
+    4300010: shackle-c4
+    4300012: shackle-c5
+    4300014: shackle-c6
+    4300016: shackle-c7
+    4300018: shackle-c8
+    4300020: shackle-c9
+    4300022: shackle-10
+    4300024: shackle-11
+    4300026: shackle-12
+    4300028: shackle-13
+    4300030: shackle-14
+    4300032: shackle-15
+    4300034: shackle-16
+    4300036: shackle-04
+    4300038: shackle-07
+    4300040: shackle-02
+    4300042: shackle-05
+    4300044: shackle-08
+    4300046: shackle-06
+    4300048: shackle-01
+    4300050: shackle-03
+    4300052: shackle-17
+    4300054: shackle-18
+    4300056: shackle-19
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #0'
+    second: {fileID: 2100002, guid: b335bc74862dc424fae1a7cd12a68101, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal
+    second: {fileID: 2100000, guid: 7d8642d91e43fa94a9d7f13346d31d07, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

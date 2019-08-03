@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Fungus;
+using HighlightPlus;
 
 public class player : MonoBehaviour
 {
@@ -25,5 +26,21 @@ public class player : MonoBehaviour
         }
 
     }
+    private void OnTriggerEnter(Collider other)
+    {
 
+        if (other.gameObject.tag == "cube")
+        {
+            other.transform.parent.gameObject.GetComponent<HighlightEffect>().enabled = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+
+        if (other.gameObject.tag == "cube")
+        {
+            other.transform.parent.gameObject.GetComponent<HighlightEffect>().enabled = false;
+        }
+    }
 }
