@@ -85,6 +85,10 @@ namespace Invector.CharacterController
                 StrafeInput();
                 JumpInput();
             }
+            else
+            {
+                cc.input = Vector2.zero;
+            }
         }
 
         #region Basic Locomotion Inputs      
