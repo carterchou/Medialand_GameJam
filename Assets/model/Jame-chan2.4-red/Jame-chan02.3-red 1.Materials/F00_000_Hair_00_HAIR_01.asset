@@ -4,8 +4,9 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: F00_000_Hair_00_HAIR_01
   m_Shader: {fileID: 4800000, guid: 9566a373fffe627408d31026ce69389d, type: 3}
   m_ShaderKeywords: USE_REFLECTION_PROBE USE_VERTEX_LIGHT _ALPHATEST_ON _LIGHTSAMPLING_ARKTOON
@@ -213,11 +214,11 @@ Material:
     - _VertexColorBlendEmissive: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.89017344, g: 0.053410407, b: 0.40485093, a: 1}
+    - _Color: {r: 0.88235295, g: 0.70980394, b: 0.5294118, a: 1}
     - _EmissionColor: {r: 0.62352943, g: 0.5921569, b: 0.29411766, a: 1}
-    - _EmissionParallaxColor: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionParallaxColor: {r: 0.88235295, g: 0.70980394, b: 0.5294118, a: 1}
     - _GlossColor: {r: 1, g: 1, b: 1, a: 1}
-    - _MatcapColor: {r: 1, g: 1, b: 1, a: 1}
+    - _MatcapColor: {r: 0.88235295, g: 0.70980394, b: 0.5294118, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadeColor: {r: 0.35882354, g: 0.074509814, b: 0.6431373, a: 1}
