@@ -111,7 +111,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: aab1b663f2bab7447bdc00dc15fe37b6, type: 2}
 --- !u!1 &314070895
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,7 +236,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &598920127
 GameObject:
@@ -316,7 +316,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &696743937
 GameObject:
@@ -336,7 +336,7 @@ GameObject:
   m_TagString: cube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &696743938
 BoxCollider:
@@ -409,7 +409,7 @@ Transform:
   m_Children:
   - {fileID: 1051539940}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &696743943
 MonoBehaviour:
@@ -513,7 +513,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!64 &746684782
 MeshCollider:
@@ -586,7 +586,7 @@ Transform:
   m_LocalScale: {x: 3.009, y: 3.009, z: 3.009}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &790399830
 GameObject:
@@ -655,7 +655,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1051539939
 GameObject:
@@ -714,7 +714,7 @@ GameObject:
   - component: {fileID: 1214649207}
   m_Layer: 0
   m_Name: hitSensor
-  m_TagString: Player
+  m_TagString: player_hitter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -746,6 +746,28 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1343040886 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100004, guid: 4babae456488c384e9ea4988088c070d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1387094182}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1343040887
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343040886}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1376698081
 GameObject:
   m_ObjectHideFlags: 0
@@ -896,7 +918,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1376698088
 MonoBehaviour:
@@ -925,6 +947,63 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!1001 &1387094182
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 100004, guid: 4babae456488c384e9ea4988088c070d, type: 3}
+      propertyPath: m_Name
+      value: avatar_complete
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 4babae456488c384e9ea4988088c070d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5862354
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 4babae456488c384e9ea4988088c070d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.733073e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 4babae456488c384e9ea4988088c070d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.9330268
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 4babae456488c384e9ea4988088c070d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 4babae456488c384e9ea4988088c070d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 4babae456488c384e9ea4988088c070d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 4babae456488c384e9ea4988088c070d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 4babae456488c384e9ea4988088c070d, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 4babae456488c384e9ea4988088c070d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 4babae456488c384e9ea4988088c070d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 4babae456488c384e9ea4988088c070d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4babae456488c384e9ea4988088c070d, type: 3}
 --- !u!1 &1392178349
 GameObject:
   m_ObjectHideFlags: 0
@@ -2979,9 +3058,9 @@ GameObject:
   - component: {fileID: 5279304281310288603}
   - component: {fileID: 5279304281310288608}
   - component: {fileID: 5279304281310288607}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: yuan_chan
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5071,7 +5150,7 @@ Transform:
   - {fileID: 5284480306119852314}
   - {fileID: 5280823571765402608}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &5284658681956775420
 Transform:
