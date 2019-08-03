@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - cube
+  - Projectile
+  - player_hitter
   layers:
   - Default
   - TransparentFX
