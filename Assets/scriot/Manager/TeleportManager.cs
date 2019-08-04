@@ -17,6 +17,9 @@ public class TeleportManager : MonoBehaviour, INotification
 
     public GameObject Player;
     public List<Transform> Teleports = new List<Transform>();
+
+    public GameObject home_exitPoint;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,11 +49,13 @@ public class TeleportManager : MonoBehaviour, INotification
     void AddNotificationObserver()
     {
         NotificationCenter.Default.AddObserver(this, NotificationKeys.TeleportTo);
+        NotificationCenter.Default.AddObserver(this, NotificationKeys.CanExitHome);
     }
 
     void RemoveNotificationObserver()
     {
         NotificationCenter.Default.RemoveObserver(this, NotificationKeys.TeleportTo);
+        NotificationCenter.Default.RemoveObserver(this, NotificationKeys.CanExitHome);
     }
 
     public void OnNotify(Notification _noti)
@@ -59,6 +64,10 @@ public class TeleportManager : MonoBehaviour, INotification
         {
             Debug.Log("收到TeleportTo");
             TeleportTo((TeleportNum)_noti.data);
+        }
+        if (_noti.name == NotificationKeys.CanExitHome)
+        {
+            home_exitPoint.SetActive(true);
         }
     }
     #endregion

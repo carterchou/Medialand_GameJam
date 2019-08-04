@@ -25,6 +25,7 @@ public class interactive : MonoBehaviour
             {
                 Debug.Log("槌子");
                 player.instance.getWeapon();
+                NotificationCenter.Default.Post(this, NotificationKeys.CanExitHome);
                 gameObject.SetActive(false);
             }
             else if (type == 2) //書信
