@@ -58,12 +58,12 @@ public class enemyAI : MonoBehaviour
     }
     public void hitOp()
     {
-        Debug.Log("op");
+        //Debug.Log("op");
         hitball.SetActive(true);
     }
     public void hitcls()
     {
-        Debug.Log("cls");
+        //Debug.Log("cls");
         hitball.SetActive(false);
     }
     private void OnTriggerEnter(Collider other)
