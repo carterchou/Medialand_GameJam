@@ -13,6 +13,7 @@ public class player : Singleton<player>
     public GameObject[] weapon;
     public vThirdPersonController v_con ;
     public bool hasWeapon = false;
+    private int ground_kind = 2;
 
     public AudioClip[] SE;// 0 is attack
     AudioSource audiosource;
@@ -53,6 +54,21 @@ public class player : Singleton<player>
         }
 
     }
+    void OnCollisionStay(UnityEngine.Collision ground)
+    {
+        if (ground.gameObject.tag == "soil")
+        {
+            ground_kind = 0;
+        }
+        else if(ground.gameObject.tag == "lawn")
+        {
+            ground_kind = 1;
+        }
+        else
+        {
+            ground_kind = 2;
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
        
@@ -74,7 +90,7 @@ public class player : Singleton<player>
         if (other.gameObject.tag == "highLight")
         {
             other.transform.parent.gameObject.GetComponent<HighlightEffect>().enabled = false;
-            other.transform.parent.gameObject.GetComponent<interactive>().enabled = false;
+            //other.transform.parent.gameObject.GetComponent<interactive>().enabled = false;
         }
         /*else if (other.gameObject.tag == "enemy")
         {
@@ -120,7 +136,12 @@ public class player : Singleton<player>
     }
     public void walkSE()
     {
-        audiosource.PlayOneShot(SE[Random.Range(1, 7)]);
+        try
+        {
+            audiosource.PlayOneShot(SE[ground_kind * 10 + Random.Range(1, 11)]);
+        }
+        catch { }
+        
 
     }
     public void getWeapon()

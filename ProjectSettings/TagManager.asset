@@ -9,8 +9,8 @@ TagManager:
   - player_hitter
   - highLight
   - diary
-  - enemy
-  - hit
+  - soil
+  - lawn
   layers:
   - Default
   - TransparentFX
