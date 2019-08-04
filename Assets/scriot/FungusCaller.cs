@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FungusCaller : MonoBehaviour
 {
@@ -20,5 +21,10 @@ public class FungusCaller : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         FungusManager.instance.CallFlowchartFunction(function_name);
+    }
+
+    public void loadScene()
+    {
+        SceneManager.LoadScene(2);
     }
 }
