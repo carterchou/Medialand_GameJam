@@ -76,7 +76,7 @@ public class player : Singleton<player>
         {
             //Debug.Log("enter");
             other.transform.parent.gameObject.GetComponent<HighlightEffect>().enabled = true;
-            //other.transform.parent.gameObject.GetComponent<interactive>().enabled = true;
+            other.transform.parent.gameObject.GetComponent<interactive>().enabled = true;
         }
     }
 
@@ -128,7 +128,12 @@ public class player : Singleton<player>
     }
     public void walkSE()
     {
-        audiosource.PlayOneShot(SE[ground_kind*10 + Random.Range(1, 11)]);
+        try
+        {
+            audiosource.PlayOneShot(SE[ground_kind * 10 + Random.Range(1, 11)]);
+        }
+        catch { }
+        
 
     }
     public void getWeapon()
