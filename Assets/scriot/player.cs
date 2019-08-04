@@ -12,10 +12,10 @@ public class player : MonoBehaviour
     public GameObject hitCollider ;
     public GameObject[] weapon;
     public vThirdPersonController v_con ;
+    public bool hasWeapon = false;
 
     public AudioClip[] SE;// 0 is attack
     AudioSource audiosource;
-
 
     private bool weapon_on = false;
 
@@ -28,7 +28,7 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.T))
+        if (Input.GetKeyDown(KeyCode.T) && hasWeapon)
         {
             weapon_on = !weapon_on ;
             anim.SetBool("onWeapon", weapon_on);
@@ -55,19 +55,22 @@ public class player : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-
-        if (other.gameObject.tag == "cube")
+       
+        if (other.gameObject.tag == "highLight")
         {
+            //Debug.Log("enter");
             other.transform.parent.gameObject.GetComponent<HighlightEffect>().enabled = true;
+            other.transform.parent.gameObject.GetComponent<interactive>().enabled = true;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
 
-        if (other.gameObject.tag == "cube")
+        if (other.gameObject.tag == "highLight")
         {
             other.transform.parent.gameObject.GetComponent<HighlightEffect>().enabled = false;
+            other.transform.parent.gameObject.GetComponent<interactive>().enabled = false;
         }
     }
 
@@ -106,5 +109,11 @@ public class player : MonoBehaviour
     public void attackSE()
     {
         audiosource.PlayOneShot(SE[0]);
+    }
+
+    public void getWeapon()
+    {
+        hasWeapon = true ;
+        weapon[0].SetActive(true);
     }
 }

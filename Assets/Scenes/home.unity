@@ -856,6 +856,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 28585966}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &881013600 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4792445542132354246, guid: 20c1b82a8c1ba67418df3c6a8763f7c2,
+    type: 3}
+  m_PrefabInstance: {fileID: 8901374396190712996}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0646cda10cadc3148bf571c7fb0daaff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &977590369 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4958141964136856, guid: 7738ccb3c7ccb2f4aa36bd30a8fbb7ef,
@@ -1786,7 +1798,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1001 &4794971641786214012
+--- !u!1001 &5392652292500171504
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1853,6 +1865,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5392652291683501106, guid: 82be4008d7c0b664a9b163d5d1a21e8a,
+        type: 3}
+      propertyPath: playerCon
+      value: 
+      objectReference: {fileID: 881013600}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82be4008d7c0b664a9b163d5d1a21e8a, type: 3}
 --- !u!1001 &8901374396190712996
@@ -1922,25 +1939,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4792445542132354242, guid: 20c1b82a8c1ba67418df3c6a8763f7c2,
-        type: 3}
-      propertyPath: m_Radius
-      value: 0.21838488
-      objectReference: {fileID: 0}
-    - target: {fileID: 4792445542132354242, guid: 20c1b82a8c1ba67418df3c6a8763f7c2,
-        type: 3}
-      propertyPath: m_Center.z
-      value: -0.027098343
-      objectReference: {fileID: 0}
-    - target: {fileID: 4792445542132354246, guid: 20c1b82a8c1ba67418df3c6a8763f7c2,
-        type: 3}
-      propertyPath: SE.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4792445542132354246, guid: 20c1b82a8c1ba67418df3c6a8763f7c2,
-        type: 3}
-      propertyPath: SE.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: 0e533c555b463f9419def657d07541e6, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20c1b82a8c1ba67418df3c6a8763f7c2, type: 3}
