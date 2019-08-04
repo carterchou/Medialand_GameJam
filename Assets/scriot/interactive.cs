@@ -21,7 +21,10 @@ public class interactive : MonoBehaviour
             if (type == 0) //日記
             {
                 Debug.Log("日記");
-            }else if (type == 1) //槌子
+                FungusManager.instance.CallFlowchartFunction("Diary");
+                gameObject.SetActive(false);
+            }
+            else if (type == 1) //槌子
             {
                 Debug.Log("槌子");
                 player.instance.getWeapon();
@@ -31,6 +34,8 @@ public class interactive : MonoBehaviour
             else if (type == 2) //書信
             {
                 Debug.Log("書信");
+                FungusManager.instance.CallFlowchartFunction("scrolls");
+                gameObject.SetActive(false);
             }
 
         }   
