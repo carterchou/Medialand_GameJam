@@ -58,7 +58,7 @@ namespace ArktoonShaders
                 }
             #else
                 #pragma warning disable 0618
-                if (www.isError) {
+                if (www.isNetworkError) {
                     Debug.Log(www.error);
                 } else {
                     updateHandler(www.downloadHandler.text);

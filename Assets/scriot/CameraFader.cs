@@ -30,7 +30,7 @@ public class CameraFader : MonoBehaviour
 
     void Update()
     {
-        TestingInput();
+        //TestingInput();
     }
     #region SceneFading
     public void Fade(Image _image, bool _InOrOut, float _duration)
