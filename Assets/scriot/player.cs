@@ -72,7 +72,7 @@ public class player : Singleton<player>
         {
             //Debug.Log("enter");
             other.transform.parent.gameObject.GetComponent<HighlightEffect>().enabled = true;
-            other.transform.parent.gameObject.GetComponent<interactive>().enabled = true;
+            //other.transform.parent.gameObject.GetComponent<interactive>().enabled = true;
         }
     }
 
@@ -82,7 +82,7 @@ public class player : Singleton<player>
         if (other.gameObject.tag == "highLight")
         {
             other.transform.parent.gameObject.GetComponent<HighlightEffect>().enabled = false;
-            other.transform.parent.gameObject.GetComponent<interactive>().enabled = false;
+            //other.transform.parent.gameObject.GetComponent<interactive>().enabled = false;
         }
     }
 
