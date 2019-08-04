@@ -1806,7 +1806,7 @@ MonoBehaviour:
   - {fileID: 1386334979462382628}
   v_con: {fileID: 4792445542132354241}
   SE:
-  - {fileID: 8300000, guid: 0e533c555b463f9419def657d07541e6, type: 3}
+  - {fileID: 8300000, guid: c197ed11d2e448c4a8ec92f9bbaf2067, type: 3}
 --- !u!54 &4792445542132354301
 Rigidbody:
   m_ObjectHideFlags: 0
