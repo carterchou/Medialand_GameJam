@@ -10,6 +10,7 @@ public enum TeleportNum
     home,
     dedicate,
     villageLeader,
+    InVillage2,
 }
 
 public class TeleportManager : MonoBehaviour, INotification
