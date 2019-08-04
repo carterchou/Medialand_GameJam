@@ -11,6 +11,8 @@ TagManager:
   - diary
   - soil
   - lawn
+  - enemy
+  - hit
   layers:
   - Default
   - TransparentFX

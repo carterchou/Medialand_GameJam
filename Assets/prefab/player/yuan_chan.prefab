@@ -1799,6 +1799,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0646cda10cadc3148bf571c7fb0daaff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPersistant: 0
   anim: {fileID: 4888018142897992761}
   hitCollider: {fileID: 1386334979958237469}
   weapon:
@@ -1828,6 +1829,16 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7091b35ba2000cd4ca844d778cd09479, type: 3}
   - {fileID: 8300000, guid: a6539d7ff21bacf47838d5c8dd2ea653, type: 3}
   - {fileID: 8300000, guid: 77b71b079aa3a6a489e45b3705dbd8b1, type: 3}
+  - {fileID: 8300000, guid: 34f195f62bf6b3f43b4d544d56139166, type: 3}
+  - {fileID: 8300000, guid: 36d5adb8e676c1343bd255930e8eb508, type: 3}
+  - {fileID: 8300000, guid: 57eda3998b5171147a88d9f6ad2f93e9, type: 3}
+  - {fileID: 8300000, guid: 523398f79f2e1c045bf9dcec958e3e4c, type: 3}
+  - {fileID: 8300000, guid: 34f195f62bf6b3f43b4d544d56139166, type: 3}
+  - {fileID: 8300000, guid: 36d5adb8e676c1343bd255930e8eb508, type: 3}
+  - {fileID: 8300000, guid: 57eda3998b5171147a88d9f6ad2f93e9, type: 3}
+  - {fileID: 8300000, guid: 523398f79f2e1c045bf9dcec958e3e4c, type: 3}
+  - {fileID: 8300000, guid: 34f195f62bf6b3f43b4d544d56139166, type: 3}
+  - {fileID: 8300000, guid: 36d5adb8e676c1343bd255930e8eb508, type: 3}
 --- !u!54 &4792445542132354301
 Rigidbody:
   m_ObjectHideFlags: 0
