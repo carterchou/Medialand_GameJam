@@ -8,6 +8,9 @@ TagManager:
   - Projectile
   - player_hitter
   - highLight
+  - diary
+  - soil
+  - lawn
   layers:
   - Default
   - TransparentFX
