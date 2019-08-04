@@ -5,12 +5,16 @@ namespace Invector.CharacterController
 {
     public class vThirdPersonController : vThirdPersonAnimator
     {
+
         protected virtual void Start()
         {
+
 #if !UNITY_EDITOR
                 Cursor.visible = false;
+           
 #endif
-        }
+            
+    }
 
         public virtual void Sprint(bool value)
         {                                   
@@ -37,6 +41,7 @@ namespace Invector.CharacterController
                 animator.CrossFadeInFixedTime("Jump", 0.1f);
             else
                 animator.CrossFadeInFixedTime("JumpMove", 0.2f);
+            
         }
 
         public virtual void RotateWithAnotherTransform(Transform referenceTransform)

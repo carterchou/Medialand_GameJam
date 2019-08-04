@@ -5,26 +5,30 @@ using Fungus;
 using HighlightPlus;
 using Invector.CharacterController;
 
-public class player : MonoBehaviour
+public class player : Singleton<player>
 {
 
     public Animator anim ;
     public GameObject hitCollider ;
     public GameObject[] weapon;
     public vThirdPersonController v_con ;
+    public bool hasWeapon = false;
+
+    public AudioClip[] SE;// 0 is attack
+    AudioSource audiosource;
 
     private bool weapon_on = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        audiosource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.T))
+        if (Input.GetKeyDown(KeyCode.T) && hasWeapon)
         {
             weapon_on = !weapon_on ;
             anim.SetBool("onWeapon", weapon_on);
@@ -32,8 +36,13 @@ public class player : MonoBehaviour
         if (weapon_on && Input.GetMouseButtonDown(0))
         {
             anim.SetTrigger("attack");
+            
         }
-
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            // play jump audio
+            //audiosource.PlayOneShot(player_jump);
+        }
     }
     void OnCollisionEnter(UnityEngine.Collision hit)
     {
@@ -46,19 +55,22 @@ public class player : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-
-        if (other.gameObject.tag == "cube")
+       
+        if (other.gameObject.tag == "highLight")
         {
+            //Debug.Log("enter");
             other.transform.parent.gameObject.GetComponent<HighlightEffect>().enabled = true;
+            other.transform.parent.gameObject.GetComponent<interactive>().enabled = true;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
 
-        if (other.gameObject.tag == "cube")
+        if (other.gameObject.tag == "highLight")
         {
             other.transform.parent.gameObject.GetComponent<HighlightEffect>().enabled = false;
+            other.transform.parent.gameObject.GetComponent<interactive>().enabled = false;
         }
     }
 
@@ -91,5 +103,21 @@ public class player : MonoBehaviour
     {
         weapon[0].SetActive(true);
         weapon[1].SetActive(false);
+    }
+
+
+    public void attackSE()
+    {
+        audiosource.PlayOneShot(SE[0]);
+    }
+    public void walkSE()
+    {
+        audiosource.PlayOneShot(SE[Random.Range(1, 7)]);
+
+    }
+    public void getWeapon()
+    {
+        hasWeapon = true ;
+        weapon[0].SetActive(true);
     }
 }
