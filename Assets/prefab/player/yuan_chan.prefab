@@ -177,7 +177,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1386334979491611487
 Transform:
   m_ObjectHideFlags: 0
@@ -1805,8 +1805,9 @@ MonoBehaviour:
   - {fileID: 1386334979491611486}
   - {fileID: 1386334979462382628}
   v_con: {fileID: 4792445542132354241}
+  hasWeapon: 0
   SE:
-  - {fileID: 8300000, guid: c197ed11d2e448c4a8ec92f9bbaf2067, type: 3}
+  - {fileID: 8300000, guid: 0e533c555b463f9419def657d07541e6, type: 3}
 --- !u!54 &4792445542132354301
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1833,10 +1834,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 0.21838488
   m_Height: 1.7629061
   m_Direction: 1
-  m_Center: {x: 0, y: 0.8858025, z: 0}
+  m_Center: {x: 0, y: 0.8858025, z: -0.027098343}
 --- !u!82 &734541045
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4816,10 +4817,6 @@ PrefabInstance:
     - target: {fileID: 1181548858143728, guid: 3db9e95faad829f4b953f712b1811fc5, type: 3}
       propertyPath: m_Name
       value: Cube
-      objectReference: {fileID: 0}
-    - target: {fileID: 1181548858143728, guid: 3db9e95faad829f4b953f712b1811fc5, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4208491925259930, guid: 3db9e95faad829f4b953f712b1811fc5, type: 3}
       propertyPath: m_LocalPosition.x
