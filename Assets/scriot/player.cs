@@ -136,12 +136,13 @@ public class player : Singleton<player>
     }
     public void walkSE()
     {
+        /*
         try
         {
             audiosource.PlayOneShot(SE[ground_kind * 10 + Random.Range(1, 11)]);
         }
         catch { }
-        
+        */
 
     }
     public void getWeapon()
