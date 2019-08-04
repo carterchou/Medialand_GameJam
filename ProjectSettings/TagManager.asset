@@ -7,6 +7,10 @@ TagManager:
   - cube
   - Projectile
   - player_hitter
+  - highLight
+  - diary
+  - soil
+  - lawn
   layers:
   - Default
   - TransparentFX
@@ -17,7 +21,7 @@ TagManager:
   - 
   - 
   - Player
-  - 
+  - noShadow
   - 
   - 
   - 
