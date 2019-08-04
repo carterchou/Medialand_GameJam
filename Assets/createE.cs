@@ -16,13 +16,20 @@ public class createE : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (num > 20)
+        if (num > 30)
         {
+            #if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+            #else
+                Application.Quit();
+            #endif
             return;
         }
-        if (time >= 100)
+        if (time >= 200)
         {
-            Instantiate(en, transform.position, transform.rotation);
+            GameObject en_t = Instantiate(en, transform.position, transform.rotation);
+            en_t.GetComponent<enemyAI>().target_obj = GameObject.FindWithTag("Player"); ;
+            num++;
             time = 0;
         }
         else

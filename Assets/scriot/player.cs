@@ -13,6 +13,7 @@ public class player : Singleton<player>
     public GameObject[] weapon;
     public vThirdPersonController v_con ;
     public bool hasWeapon = false;
+    public int life = 5;
     private int ground_kind = 2;
 
     public AudioClip[] SE;// 0 is attack
@@ -83,6 +84,15 @@ public class player : Singleton<player>
             anim.SetTrigger("hurt");
             v_con.lockMovement = false;
             Hit_over();
+            life--;
+            if (life == 0)
+            {
+                #if UNITY_EDITOR
+                                UnityEditor.EditorApplication.isPlaying = false;
+                #else
+                                Application.Quit();
+                #endif
+            }
             Debug.Log("痛");
         }
     }

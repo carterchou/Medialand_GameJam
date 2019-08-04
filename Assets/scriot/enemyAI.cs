@@ -17,7 +17,6 @@ public class enemyAI : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();        //接收NavMeshAgent
         agent.SetDestination(target_obj.transform.position);    //往目標物的座標移動
-        target_obj = GameObject.FindWithTag("Player");
     }
 
     // Update is called once per frame
@@ -86,4 +85,9 @@ public class enemyAI : MonoBehaviour
             canAtk = false;
         }
     }
+    public void died()
+    {
+        Destroy(gameObject);
+    }
+
 }
