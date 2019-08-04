@@ -107,4 +107,8 @@ public class player : MonoBehaviour
     {
         audiosource.PlayOneShot(SE[0]);
     }
+    public void walkSE()
+    {
+        audiosource.PlayOneShot( SE[Random.Range(1,7)] );
+    }
 }
