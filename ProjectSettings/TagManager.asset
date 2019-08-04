@@ -7,6 +7,7 @@ TagManager:
   - cube
   - Projectile
   - player_hitter
+  - highLight
   layers:
   - Default
   - TransparentFX
