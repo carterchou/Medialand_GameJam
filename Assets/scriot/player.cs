@@ -80,6 +80,9 @@ public class player : Singleton<player>
         }
         else if(other.gameObject.tag == "hit")
         {
+            anim.SetTrigger("hurt");
+            v_con.lockMovement = false;
+            Hit_over();
             Debug.Log("痛");
         }
     }
@@ -92,10 +95,7 @@ public class player : Singleton<player>
             other.transform.parent.gameObject.GetComponent<HighlightEffect>().enabled = false;
             other.transform.parent.gameObject.GetComponent<interactive>().enabled = false;
         }
-        else if (other.gameObject.tag == "hit")
-        {
 
-        }
     }
 
     public void move_unlock()

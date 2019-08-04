@@ -72,6 +72,10 @@ public class enemyAI : MonoBehaviour
         {
             canAtk = true ;
         }
+        if (other.gameObject.tag == "player_hitter")
+        {
+            anim.SetTrigger("hurt");
+        }
     }
 
     private void OnTriggerExit(Collider other)
