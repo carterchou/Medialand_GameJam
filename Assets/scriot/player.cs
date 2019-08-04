@@ -83,6 +83,11 @@ public class player : Singleton<player>
             anim.SetTrigger("hurt");
             v_con.lockMovement = false;
             Hit_over();
+            #if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+            #else
+                Application.Quit();
+            #endif
             Debug.Log("痛");
         }
     }
