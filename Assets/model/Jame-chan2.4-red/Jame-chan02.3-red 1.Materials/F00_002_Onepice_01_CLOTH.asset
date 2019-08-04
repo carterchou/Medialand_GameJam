@@ -4,8 +4,9 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: F00_002_Onepice_01_CLOTH
   m_Shader: {fileID: 4800000, guid: fd5c20ab9c5485444b5084f464d91504, type: 3}
   m_ShaderKeywords: MTOON_OUTLINE_COLOR_FIXED MTOON_OUTLINE_WIDTH_WORLD USE_REFLECTION_PROBE
@@ -49,7 +50,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 9da83be1773508d4a84aeb18747a0d3f, type: 3}
+        m_Texture: {fileID: 2800000, guid: afd0057ae0c28be4c8511f5eb3978ed1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MatcapBlendMask:
