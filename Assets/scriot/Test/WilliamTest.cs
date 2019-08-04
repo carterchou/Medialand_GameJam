@@ -5,6 +5,7 @@ using UnityEngine;
 public class WilliamTest : MonoBehaviour
 {
     public GameObject test1;
+    public TeleportNum m_TeleportNum;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,6 @@ public class WilliamTest : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("WilliamTest OnTriggerEnter");
-        NotificationCenter.Default.Post(this,NotificationKeys.TeleportTo, TeleportNum.Test1);
+        NotificationCenter.Default.Post(this,NotificationKeys.TeleportTo, m_TeleportNum);
     }
 }

@@ -5,7 +5,7 @@ using Fungus;
 using HighlightPlus;
 using Invector.CharacterController;
 
-public class player : MonoBehaviour
+public class player : Singleton<player>
 {
 
     public Animator anim ;
