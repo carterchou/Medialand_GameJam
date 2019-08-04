@@ -25,7 +25,7 @@ public class enemyAI : MonoBehaviour
         if (canAtk)
         {
             anim.SetBool("attack", true);
-            agent.Stop();
+            //agent.Stop();
         }
         else
         {
@@ -76,7 +76,7 @@ public class enemyAI : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "enemy")
+        if (other.gameObject.tag == "Player")
         {
             canAtk = false;
         }

@@ -78,10 +78,10 @@ public class player : Singleton<player>
             other.transform.parent.gameObject.GetComponent<HighlightEffect>().enabled = true;
             other.transform.parent.gameObject.GetComponent<interactive>().enabled = true;
         }
-        /*else if(other.gameObject.tag == "enemy")
+        else if(other.gameObject.tag == "hit")
         {
-            other.transform.parent.gameObject.GetComponent<enemyAI>().canAtk = true ;
-        }*/
+            Debug.Log("痛");
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -90,12 +90,12 @@ public class player : Singleton<player>
         if (other.gameObject.tag == "highLight")
         {
             other.transform.parent.gameObject.GetComponent<HighlightEffect>().enabled = false;
-            //other.transform.parent.gameObject.GetComponent<interactive>().enabled = false;
+            other.transform.parent.gameObject.GetComponent<interactive>().enabled = false;
         }
-        /*else if (other.gameObject.tag == "enemy")
+        else if (other.gameObject.tag == "hit")
         {
-            other.transform.parent.gameObject.GetComponent<enemyAI>().canAtk = false;
-        }*/
+
+        }
     }
 
     public void move_unlock()
