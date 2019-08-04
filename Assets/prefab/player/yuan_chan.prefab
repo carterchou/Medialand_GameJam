@@ -177,7 +177,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1386334979491611487
 Transform:
   m_ObjectHideFlags: 0
@@ -1805,8 +1805,29 @@ MonoBehaviour:
   - {fileID: 1386334979491611486}
   - {fileID: 1386334979462382628}
   v_con: {fileID: 4792445542132354241}
+  hasWeapon: 0
   SE:
   - {fileID: 8300000, guid: c197ed11d2e448c4a8ec92f9bbaf2067, type: 3}
+  - {fileID: 8300000, guid: 211cb950893153a488e22182bdf74df5, type: 3}
+  - {fileID: 8300000, guid: 644ea31e6ec3ac04680fa611ff17f4ff, type: 3}
+  - {fileID: 8300000, guid: 2a8c9bfe63b570b49bcc0bb70f427c41, type: 3}
+  - {fileID: 8300000, guid: 688841fabdd791a4a9ee9adea580b02f, type: 3}
+  - {fileID: 8300000, guid: 715af086ba03534448cdd5ae3bed7988, type: 3}
+  - {fileID: 8300000, guid: a05b9d26b97dba043b6ddac5353503eb, type: 3}
+  - {fileID: 8300000, guid: f63b37d36bd8d7e45b276ae086ab07b9, type: 3}
+  - {fileID: 8300000, guid: 9e26475d8dc97044898cea8c2423a5bc, type: 3}
+  - {fileID: 8300000, guid: c55e09152f03d6841b506d12e45bfa34, type: 3}
+  - {fileID: 8300000, guid: 7436b1065f84eed4e988a897a3021bc4, type: 3}
+  - {fileID: 8300000, guid: e8e338ebc03a43f418811eb4b6400ca8, type: 3}
+  - {fileID: 8300000, guid: 5d8bdb33f634b3c4aa3e317308dba607, type: 3}
+  - {fileID: 8300000, guid: 9d4d30be3b276d444b83494132377555, type: 3}
+  - {fileID: 8300000, guid: 64674d51101820d4c8a21ec47fb4a148, type: 3}
+  - {fileID: 8300000, guid: ee494ef7c68aa0c4d99c8256081e6381, type: 3}
+  - {fileID: 8300000, guid: 034a3b950a516e04ab7ef7f47e79acc1, type: 3}
+  - {fileID: 8300000, guid: b7fb8548e5de3c944bb9fe67977ff4e0, type: 3}
+  - {fileID: 8300000, guid: 7091b35ba2000cd4ca844d778cd09479, type: 3}
+  - {fileID: 8300000, guid: a6539d7ff21bacf47838d5c8dd2ea653, type: 3}
+  - {fileID: 8300000, guid: 77b71b079aa3a6a489e45b3705dbd8b1, type: 3}
 --- !u!54 &4792445542132354301
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1833,10 +1854,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 0.21838488
   m_Height: 1.7629061
   m_Direction: 1
-  m_Center: {x: 0, y: 0.8858025, z: 0}
+  m_Center: {x: 0, y: 0.8858025, z: -0.027098343}
 --- !u!82 &734541045
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4816,10 +4837,6 @@ PrefabInstance:
     - target: {fileID: 1181548858143728, guid: 3db9e95faad829f4b953f712b1811fc5, type: 3}
       propertyPath: m_Name
       value: Cube
-      objectReference: {fileID: 0}
-    - target: {fileID: 1181548858143728, guid: 3db9e95faad829f4b953f712b1811fc5, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4208491925259930, guid: 3db9e95faad829f4b953f712b1811fc5, type: 3}
       propertyPath: m_LocalPosition.x
