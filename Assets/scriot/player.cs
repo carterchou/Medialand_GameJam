@@ -110,16 +110,14 @@ public class player : MonoBehaviour
     {
         audiosource.PlayOneShot(SE[0]);
     }
-<<<<<<< HEAD
     public void walkSE()
     {
-        audiosource.PlayOneShot( SE[Random.Range(1,7)] );
-=======
+        audiosource.PlayOneShot(SE[Random.Range(1, 7)]);
 
+    }
     public void getWeapon()
     {
         hasWeapon = true ;
         weapon[0].SetActive(true);
->>>>>>> 2f1bde6ee250cbe78f51acb7ce88717112a9636e
     }
 }
