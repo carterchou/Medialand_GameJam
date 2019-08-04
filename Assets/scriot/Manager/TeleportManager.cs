@@ -10,7 +10,6 @@ public enum TeleportNum
     home,
     dedicate,
     villageLeader,
-    
 }
 
 public class TeleportManager : MonoBehaviour, INotification
@@ -22,6 +21,7 @@ public class TeleportManager : MonoBehaviour, INotification
     void Start()
     {
         AddNotificationObserver();
+        TeleportTo(TeleportNum.home);
     }
 
     // Update is called once per frame

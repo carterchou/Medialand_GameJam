@@ -7,7 +7,7 @@ public class interactive : MonoBehaviour
     // Start is called before the first frame update
     [Header("種類 : 0 日記 1 槌子 2 書信")]
     public int type ;
-    public player playerCon ;
+    //public player playerCon ;
 
     void Start()
     {
@@ -24,7 +24,7 @@ public class interactive : MonoBehaviour
             }else if (type == 1) //槌子
             {
                 Debug.Log("槌子");
-                playerCon.getWeapon();
+                player.instance.getWeapon();
                 gameObject.SetActive(false);
             }
             else if (type == 2) //書信
