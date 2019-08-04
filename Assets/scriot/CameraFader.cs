@@ -81,5 +81,4 @@ public class CameraFader : MonoBehaviour
 
     #endregion
 
-    public void 
 }
