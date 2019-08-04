@@ -13,8 +13,7 @@ public class player : MonoBehaviour
     public GameObject[] weapon;
     public vThirdPersonController v_con ;
 
-    public AudioClip player_jump;
-    public AudioClip player_attack;
+    public AudioClip[] SE;// 0 is attack
     AudioSource audiosource;
 
 
@@ -37,13 +36,12 @@ public class player : MonoBehaviour
         if (weapon_on && Input.GetMouseButtonDown(0))
         {
             anim.SetTrigger("attack");
-            StartCoroutine(hitsound());
             
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
             // play jump audio
-            audiosource.PlayOneShot(player_jump);
+            //audiosource.PlayOneShot(player_jump);
         }
     }
     void OnCollisionEnter(UnityEngine.Collision hit)
@@ -104,10 +102,9 @@ public class player : MonoBehaviour
         weapon[1].SetActive(false);
     }
 
-    IEnumerator hitsound()
-    {
-        yield return new WaitForSeconds(0.5f);
-        audiosource.PlayOneShot(player_jump);
-    }
 
+    public void attackSE()
+    {
+        audiosource.PlayOneShot(SE[0]);
+    }
 }
