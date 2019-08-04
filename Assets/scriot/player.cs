@@ -13,7 +13,7 @@ public class player : Singleton<player>
     public GameObject[] weapon;
     public vThirdPersonController v_con ;
     public bool hasWeapon = false;
-    private int ground_kind = 3;
+    private int ground_kind = 2;
 
     public AudioClip[] SE;// 0 is attack
     AudioSource audiosource;
@@ -66,7 +66,7 @@ public class player : Singleton<player>
         }
         else
         {
-            ground_kind = 3;
+            ground_kind = 2;
         }
     }
     private void OnTriggerEnter(Collider other)
