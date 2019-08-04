@@ -12,6 +12,10 @@ public class CameraFader : MonoBehaviour
 
     public Image[] imageArray = null;
 
+    void Start()
+    {
+        StartBackgroundSlides();
+    }
     public CameraFader(Image _image, float _duration)//for Single
     {
         fadingImage = _image;
