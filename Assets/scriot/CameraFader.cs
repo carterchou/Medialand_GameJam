@@ -56,7 +56,7 @@ public class CameraFader : MonoBehaviour
             Color c = _image.color;
             c.a = Mathf.Lerp(0f, 1.0f, temp / _duration);
             _image.color = c;
-            Debug.Log(c.a);
+            //Debug.Log(c.a);
             yield return null;
         }
     }
@@ -69,7 +69,7 @@ public class CameraFader : MonoBehaviour
             Color c = _image.color;
             c.a = Mathf.Lerp(1.0f, 0f, temp / _duration);
             _image.color = c;
-            Debug.Log(c.a);
+            //Debug.Log(c.a);
             yield return null;
         }
     }

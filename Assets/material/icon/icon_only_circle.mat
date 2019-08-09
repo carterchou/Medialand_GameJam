@@ -1,0 +1,219 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: icon_only_circle
+  m_Shader: {fileID: 4800000, guid: c7a1833ca30e2374f9de9cc688702b4c, type: 3}
+  m_ShaderKeywords: _USEALPHA_ON _USETIME_ON
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissolveTex:
+        m_Texture: {fileID: 2800000, guid: daccfc061c203a547bf1b36673bf3cfd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 7ef1c056a519963409bb68a9945b53ed, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Pattern:
+        m_Texture: {fileID: 2800000, guid: 7ef1c056a519963409bb68a9945b53ed, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Patterns:
+        m_Texture: {fileID: 2800000, guid: bf53504fb0a84fe4d89bd8ad747bb76b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SphereUV:
+        m_Texture: {fileID: 2800000, guid: 0240035a08433184b882820852b028e4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TargetPattern:
+        m_Texture: {fileID: 2800000, guid: 7ef1c056a519963409bb68a9945b53ed, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _Alpha: 1
+    - _Amount: 0.079
+    - _Amplitude: 3
+    - _AmplitudeAmount: 1
+    - _ArrowAmount: 2
+    - _BG_Opacity: 0.1
+    - _B_ShakeStrength: 0
+    - _BlendOp: 0
+    - _BumpAmt: 10
+    - _BumpIntensity: 1
+    - _BumpScale: 1
+    - _CameraFadingEnabled: 0
+    - _CameraFarFadeDistance: 2
+    - _CameraNearFadeDistance: 1
+    - _CenterRadius: 0.2066802
+    - _CircleA_Speed: -0.5
+    - _CircleB_Speed: 0.5
+    - _ColorMask: 15
+    - _Cull: 2
+    - _Cutoff: 0.5
+    - _Cycle: 2
+    - _DashAmount: 64
+    - _DashSpeed: 1
+    - _Dash_Length: 0.5
+    - _Density: 60
+    - _DetailNormalMapScale: 1
+    - _Direction: 0
+    - _DissolveAmount: 0
+    - _DissolveLineWitdh: 0.1
+    - _DissolveUVScale: 1
+    - _DistortionBlend: 0.5
+    - _DistortionEnabled: 0
+    - _DistortionStrength: 1
+    - _DistortionStrengthScaled: 0
+    - _DstBlend: 0
+    - _Emissin: 1.47
+    - _Emission: 1
+    - _EmissionEnabled: 0
+    - _FadeIn: 0
+    - _FadeOut: 0.911
+    - _FlipbookMode: 0
+    - _G_Opacity: 0.5
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _GridDensity: 16
+    - _GridOpacity: 0.5
+    - _GridWidth: 0.5
+    - _Grid_: 4
+    - _Grid_Width: 0.1
+    - _Grid_u: 32
+    - _Grid_v: 8
+    - _Grid_x: 4
+    - _LadarSpeed: 0.1
+    - _Length: 0.75
+    - _LengthContrast: 0.1
+    - _Level: 8
+    - _LightingEnabled: 1
+    - _Mask: 0.5
+    - _Metallic: 0
+    - _Mode: 0
+    - _MosaicDensity: 6
+    - _MosaicMaskSpeed: 0.5
+    - _MosaicStrength: 0
+    - _Mosaic_U: 2
+    - _Mosaic_V: 1
+    - _OcclusionStrength: 1
+    - _Opacity: 1
+    - _Open: 0
+    - _Parallax: 0.02
+    - _Percentage: 0
+    - _Pitch_B: 0.525
+    - _Pitch_G: 0.125
+    - _Pitch_R: 0.4
+    - _RadialGrid_X: 32
+    - _RadialGrid_Y: 4
+    - _Radius: 0.5
+    - _RandomTime: 1
+    - _Ring_Thickness: 0.1
+    - _Roll_B: 4
+    - _Roll_G: 4
+    - _Roll_R: 4
+    - _ScaleIcon: 0.25
+    - _ScaleSphere: 0.7398363
+    - _ScanelineContrast: 0.5
+    - _ScanelineDensity: 512
+    - _ScanlineContrast: 0.5
+    - _ScanlineDensity: 128
+    - _ScanlineSpeed: 1
+    - _Scanline_Density: 16
+    - _Shininess: 0.078125
+    - _ShinnyAmplitude: 0
+    - _ShinnySpeed: 1
+    - _ShinnyStrength: 1
+    - _ShowUp: 0
+    - _SmoothnessTextureChannel: 0
+    - _SoftParticlesEnabled: 0
+    - _SoftParticlesFarFadeDistance: 1
+    - _SoftParticlesNearFadeDistance: 0
+    - _SpecularHighlights: 1
+    - _Speed: 1
+    - _Speed_B: 0.5
+    - _Speed_G: -1
+    - _Speed_R: 1
+    - _SphereGlow: 0
+    - _SphereSpeed: 0.5
+    - _SrcBlend: 1
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _Step: 6
+    - _TargetSize: 0.5
+    - _TargetSpeed: 0.5
+    - _TimeScale: 1
+    - _TimeSpeed: 0.5
+    - _UVSec: 0
+    - _UseAlpha: 1
+    - _UsePattern: 0
+    - _UseSin: 0
+    - _UseTarget: 0
+    - _UseTime: 1
+    - _UseUIAlphaClip: 0
+    - _WaveOpacity: 0
+    - _WaveSpeed: 1
+    - _Width: 0
+    - _ZWrite: 1
+    - _node_2432: 1
+    m_Colors:
+    - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
+    - _Color: {r: 0.37647063, g: 0.015686275, b: 0.007843138, a: 1}
+    - _Color2: {r: 1, g: 0, b: 0, a: 1}
+    - _ColorBG: {r: 0.1985294, g: 0.1985294, b: 0.1985294, a: 1}
+    - _ColorInside: {r: 0.3945098, g: 0.7843137, b: 0.7772973, a: 1}
+    - _ColorOutside: {r: 0.07843138, g: 0.3921569, b: 0.7803922, a: 1}
+    - _DissolveLineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+    - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}
+    - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
